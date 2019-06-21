@@ -11,7 +11,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+            
+            	sh 'rm -rf node_modules'
+	    	sh 'npm cache clean'
+		sh 'npm install'
                 sh 'npm rebuild node-sass'
                 sh 'npm start'
             }
