@@ -13,7 +13,7 @@ pipeline {
             steps {
             
             	sh 'rm -rf node_modules'
-	    	sh 'npm cache clean'
+	    	sh 'npm cache clean --force'
 		sh 'npm install'
                 sh 'npm rebuild node-sass'
                 sh 'npm start'
