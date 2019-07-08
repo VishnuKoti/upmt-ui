@@ -19,10 +19,11 @@ pipeline {
                 sh 'npm start'
             }
         }
-        stage('Test') {       	
+        stage('Test') {  
+          steps {
 		       sh 'npm run test'
-        }
-
+	        }
+	}
     }
     
 }
