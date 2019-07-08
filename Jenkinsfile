@@ -16,13 +16,18 @@ pipeline {
 	    	sh 'npm cache clean --force'
 		sh 'npm install'
                 sh 'npm rebuild node-sass'
-                sh 'npm start'
+               
             }
         }
         stage('Test') {  
 	              steps {
 	    		       sh 'npm run test'
 	    	        }
+	}
+	 stage('Run') {  
+		              steps {
+		    		       sh 'npm start'
+		    	        }
 	}
     }
     
