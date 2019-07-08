@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Login } from './login.component';
 import { shallow } from 'enzyme';
 
@@ -18,4 +18,4 @@ wrapper.find('input[type="password"]').simulate('change', {target: {name: 'passw
 expect(wrapper.state('password')).toEqual('upmtadmin');
 });
 
-});
+});*/
