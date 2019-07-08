@@ -19,8 +19,9 @@ pipeline {
                 sh 'npm start'
             }
         }
-       
-       // npm run test (another stage)
+        stage('Test') {       	
+	       sh 'npm run test'
+        }
     }
     
 }
