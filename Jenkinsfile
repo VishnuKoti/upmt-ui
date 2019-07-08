@@ -20,6 +20,7 @@ pipeline {
             }
         }
        
+       // npm run test (another stage)
     }
     
 }
